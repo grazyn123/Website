@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: rgb(173, 214, 240);
+
+}
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+.blackhole{
+    content: '';
+    width: 400px;
+    height: 400px;
+    background: url(twarz.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    border-radius: 50%;
+    0 0 50px #f1f507;
+    left: 1100px;
+    bottom: -90px;
+    transition-duration: 2.3s;
+
+}
+.blackhole:hover{
+    box-shadow: 10px 0 15px 10px  rgb(28, 49, 238);
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    border-bottom:  2px solid rgb(0, 0, 0);
+
+}
+
+
+header .logo{
+    font-size: 1.5em;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+header .logo span{
+    color:rgb(0, 0, 0);
+    border-bottom: 4px solid rgb(0, 0, 0);
+
+}
+header .navbtn{
+    background: black;
+    color: wheat;
+    font-size: 16px;
+    padding: 15px 25px;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+header .navbtn .active{
+    background: url(x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+
+}
+
+
+.content{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .contentBx{
+    position: relative;
+    max-width: 600px;
+    z-index: 100;
+}
+.content .contentBx h4{
+    font-weight: 400;
+    color: rgb(84, 104, 232);
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.content .contentBx h2{
+   font-size: 4em;
+   line-height: 1em;
+   color: rgb(255, 255, 255);
+}
+.content .contentBx  span{
+
+    font-size: 2.3em;
+   
+    color: rgb(255, 255, 255);
+ }
+.content .contentBx h3{
+    font-weight: 300;
+    color: rgb(241, 90, 90);
+    font-size: 2em;
+}
+.content .contentBx p{
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    margin: 10px 0;
+}
+.content .contentBx a{
+    font-family: Arial Bold Italic;
+    font-size: 20px;
+    display: inline-block;
+    color: rgb(31, 29, 30);
+    padding-top: 10px;
+    padding-right: 20px;
+    margin-right: 20px;
+    text-transform: uppercase;
+   border: 2px solid #1de5ff;
+   letter-spacing: 1.7px;
+   transition: 0.5s;
+
+}
+.content .contentBx a:last-child{
+    background: #1de5ff;
+    color: black
+
+}
+.content .contentBx a:hover{
+    box-shadow: 10px 0 15px #000000;
+    
+}
+
+
