@@ -73,6 +73,15 @@ header .navbtn{
     cursor: pointer;
 }
 
+
+header .navbtn:hover {
+    background: rgb(16, 6, 63);
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 5px 10px rgb(16, 6, 63);
+    transition: all 0.7s ease;
+}
+
 header .navbtn .active{
     background: url(x.png);
     background-repeat: no-repeat;
@@ -90,10 +99,25 @@ header .navbtn .active{
     justify-content: space-between;
     align-items: center;
 }
+
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
 .content .contentBx{
     position: relative;
     max-width: 600px;
     z-index: 100;
+    animation: slideIn 2.5s ease-out forwards;
 }
 .content .contentBx h4{
     font-weight: 400;
